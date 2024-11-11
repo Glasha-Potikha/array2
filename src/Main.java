@@ -27,7 +27,12 @@ public class Main {
         System.out.println("Средняя сумма трат за месяц составила " + averagePaymentInRubles + " рублей и " + averagePaymentInKopecks + " копеек");
         // Задача №4
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+        System.out.println();
 
+        /*
         for (int i = 0; i < reverseFullName.length / 2; i++) {
             final char current = reverseFullName[i];
             reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
@@ -36,6 +41,6 @@ public class Main {
         for (char el : reverseFullName) {
             System.out.print(el);
         }
-        System.out.println();
+        System.out.println();*/
     }
 }
